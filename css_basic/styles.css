@@ -219,3 +219,34 @@ h6 {
   	float: none;
   }
 }
+/* Custom styling */
+
+body {
+	background-color: #fdfaf5;
+}
+header {
+	background-color: #1b2a4a;
+}
+header a, header li.logo {
+	color: #E08D3C;
+}
+h1, h2, h3 {
+	color: #1b2a4a;
+}
+article {
+	background-color: #ffffff;
+	border-radius: 4px;
+}
+a {
+	color: #E08D3C;
+}
+a:hover {
+	color: #1b2a4a;
+}
+footer {
+	background-color: #1b2a4a;
+	color: #ffffff;
+}
+footer a {
+	color: #E08D3C;
+}
