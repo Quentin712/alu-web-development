@@ -111,6 +111,27 @@ header .right {
 }
 
 
+/* Flexbox layout */
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+main {
+	display: flex;
+	flex-direction: row;
+	flex: auto;
+}
+article {
+	flex: 2;
+	overflow-y: auto;
+}
+aside {
+	flex: 1;
+	overflow-y: auto;
+}
+
+
 /* Header */
 header {
 	padding: 20px 0;
