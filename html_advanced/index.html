@@ -86,93 +86,89 @@
         </div>
     </section>
 
-    <section id="video-section">
-        <h3 class="title">Most <span>popular</span> tutorials</h3>
+    <!-- BEM refactor: this section uses block__element naming instead of
+         the ID/utility classes the rest of the page still uses. See
+         style.css for the matching .tutorials / .video-card rules. -->
+    <section class="tutorials">
+        <h2 class="tutorials__title">Most <span class="tutorials__title-highlight">popular</span> tutorials</h2>
 
-        <div id="videos">
-            <div class="single-video">
-                <div class="preview">
-                    <img src="https://html-homework-assets.vercel.app/play.svg" class="play-icon" alt="Play icon">
-                    <img src="https://html-homework-assets.vercel.app/video-1.jpg" alt="Video-1">
+        <div class="video-grid">
+
+            <article class="video-card">
+                <div class="video-card__thumbnail">
+                    <img class="video-card__image" src="https://html-homework-assets.vercel.app/video-1.jpg" alt="Diagonal Smile tutorial preview">
+                    <img class="video-card__play" src="https://html-homework-assets.vercel.app/play.svg" alt="Play video">
                 </div>
-                <div class="contents">
-                    <h3>Happy Smile</h3>
-                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-
-                    <div class="author">
-                        <img src="https://html-homework-assets.vercel.app/bruce.jpg" alt="person-1">
-                        <h4>Phillip Massey</h4>
+                <h3 class="video-card__heading">Diagonal Smile</h3>
+                <p class="video-card__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <footer class="video-card__footer">
+                    <div class="video-card__author">
+                        <img class="video-card__author-image" src="https://html-homework-assets.vercel.app/philip.jpg" alt="Phillip Massey">
+                        <h4 class="video-card__author-name">Phillip Massey</h4>
                     </div>
-
-                    <div class="ratings">
-                        <span class="stars"></span>
-                        <b>8 min</b>
+                    <div class="video-card__rating">
+                        <img class="video-card__rating-image" src="https://html-homework-assets.vercel.app/rating.svg" alt="4 out of 5 stars">
+                        <p class="video-card__duration">8 min</p>
                     </div>
+                </footer>
+            </article>
+
+            <article class="video-card">
+                <div class="video-card__thumbnail">
+                    <img class="video-card__image" src="https://html-homework-assets.vercel.app/video-2.jpg" alt="Sad Smile tutorial preview">
+                    <img class="video-card__play" src="https://html-homework-assets.vercel.app/play.svg" alt="Play video">
                 </div>
-            </div>
-
-            <div class="single-video">
-                <div class="preview">
-                    <img src="https://html-homework-assets.vercel.app/play.svg" class="play-icon" alt="Play icon">
-                    <img src="https://html-homework-assets.vercel.app/video-2.jpg" alt="Video-2">
-                </div>
-                <div class="contents">
-                    <h3>Happy Smile</h3>
-                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-
-                    <div class="author">
-                        <img src="https://html-homework-assets.vercel.app/bruce.jpg" alt="person-1">
-                        <h4>Phillip Massey</h4>
+                <h3 class="video-card__heading">Sad Smile</h3>
+                <p class="video-card__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <footer class="video-card__footer">
+                    <div class="video-card__author">
+                        <img class="video-card__author-image" src="https://html-homework-assets.vercel.app/philip.jpg" alt="Phillip Massey">
+                        <h4 class="video-card__author-name">Phillip Massey</h4>
                     </div>
-
-                    <div class="ratings">
-                        <span class="stars"></span>
-                        <b>8 min</b>
+                    <div class="video-card__rating">
+                        <img class="video-card__rating-image" src="https://html-homework-assets.vercel.app/rating.svg" alt="4 out of 5 stars">
+                        <p class="video-card__duration">8 min</p>
                     </div>
-                </div>
-            </div>
+                </footer>
+            </article>
 
-            <div class="single-video">
-                <div class="preview">
-                    <img src="https://html-homework-assets.vercel.app/play.svg" class="play-icon" alt="Play icon">
-                    <img src="https://html-homework-assets.vercel.app/video-3.jpg" alt="Video-3">
+            <article class="video-card">
+                <div class="video-card__thumbnail">
+                    <img class="video-card__image" src="https://html-homework-assets.vercel.app/video-3.jpg" alt="Natural Smile tutorial preview">
+                    <img class="video-card__play" src="https://html-homework-assets.vercel.app/play.svg" alt="Play video">
                 </div>
-                <div class="contents">
-                    <h3>Happy Smile</h3>
-                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-
-                    <div class="author">
-                        <img src="https://html-homework-assets.vercel.app/bruce.jpg" alt="person-1">
-                        <h4>Phillip Massey</h4>
+                <h3 class="video-card__heading">Natural Smile</h3>
+                <p class="video-card__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <footer class="video-card__footer">
+                    <div class="video-card__author">
+                        <img class="video-card__author-image" src="https://html-homework-assets.vercel.app/philip.jpg" alt="Phillip Massey">
+                        <h4 class="video-card__author-name">Phillip Massey</h4>
                     </div>
-
-                    <div class="ratings">
-                        <span class="stars"></span>
-                        <b>8 min</b>
+                    <div class="video-card__rating">
+                        <img class="video-card__rating-image" src="https://html-homework-assets.vercel.app/rating.svg" alt="4 out of 5 stars">
+                        <p class="video-card__duration">8 min</p>
                     </div>
-                </div>
-            </div>
+                </footer>
+            </article>
 
-            <div class="single-video">
-                <div class="preview">
-                    <img src="https://html-homework-assets.vercel.app/play.svg" class="play-icon" alt="Play icon">
-                    <img src="https://html-homework-assets.vercel.app/video-4.jpg" alt="Video-4">
+            <article class="video-card">
+                <div class="video-card__thumbnail">
+                    <img class="video-card__image" src="https://html-homework-assets.vercel.app/video-4.jpg" alt="Happy Smile tutorial preview">
+                    <img class="video-card__play" src="https://html-homework-assets.vercel.app/play.svg" alt="Play video">
                 </div>
-                <div class="contents">
-                    <h3>Happy Smile</h3>
-                    <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-
-                    <div class="author">
-                        <img src="https://html-homework-assets.vercel.app/bruce.jpg" alt="person-1">
-                        <h4>Phillip Massey</h4>
+                <h3 class="video-card__heading">Happy Smile</h3>
+                <p class="video-card__text">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+                <footer class="video-card__footer">
+                    <div class="video-card__author">
+                        <img class="video-card__author-image" src="https://html-homework-assets.vercel.app/philip.jpg" alt="Phillip Massey">
+                        <h4 class="video-card__author-name">Phillip Massey</h4>
                     </div>
-
-                    <div class="ratings">
-                        <span class="stars"></span>
-                        <b>8 min</b>
+                    <div class="video-card__rating">
+                        <img class="video-card__rating-image" src="https://html-homework-assets.vercel.app/rating.svg" alt="4 out of 5 stars">
+                        <p class="video-card__duration">8 min</p>
                     </div>
-                </div>
-            </div>
+                </footer>
+            </article>
 
         </div>
     </section>
